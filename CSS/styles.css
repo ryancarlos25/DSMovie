@@ -58,9 +58,11 @@ html, body {
     .dsmovie-contact-container img {
         margin-right: 10px;
     }
-#dsmovie-card-list {
+    
+    #dsmovie-card-list {
     padding: 40px 0;
     }
+    
     .dsmovie-card {
         width: 360px;
         
