@@ -95,6 +95,12 @@ html, body {
         text-align: center;
     }
 
+    .dsmovie-form-container {
+        padding: 40px 0 ;
+        max-width: 480px;
+    }
+    
+    
     /* Animated Botton */
 
     button {
@@ -104,6 +110,7 @@ html, body {
     height: 40px;
     font-weight: bold;
     font-size: 14px;
+    margin: 15px;
 }
 
 button span {
@@ -150,7 +157,32 @@ button:hover {
 .third-button:active span {
     transform: translateY(-1px);
 }
+
+/*Cancel button animated*/
         
+.third-button-cancel {
+    background: #b13636;
+    border-radius: 12px;
+    color: #FFF;
+    padding: 0;
+    outline-offset: 4px;
+}
+
+.third-button-cancel {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    background: #f04949;
+    transform: translateY(-7px);
+}
+
+.third-button-cancel:hover span {
+    transform: translateY(-6px);
+}
+
+.third-button-cancel:active span {
+    transform: translateY(-1px);
+}
       
         
         
