@@ -37,22 +37,40 @@
                     <div class="dsmovie-card">
                         <img src="https://www.themoviedb.org/t/p/w533_and_h300_bestv2/wrhLyiY7ksW0fQCqNpa52qiOAH8.jpg"
                             alt="The Witcher">
-                        <div class="dsmovie-card-description">
+                        <div class="dsmovie-form-description">
                             <h3>Reacher</h3>
-                            <div class="container-button">
-                                <button class="third-button">
-                                    <span>
-                                       <a href="https://www.primevideo.com/detail/0RTZ57DQ6PBHH29UN5JS7U7CW4/ref=atv_hm_hom_3_c_8o26tb_brws_3_6">Salvar</a>
-                                    </span>
-                                </button>
-                            </div>
-                            <div class="container-button">
-                                <button class="third-button">
-                                    <span>
-                                       <a href="index.html">Cancelar</a>
-                                    </span>
-                                </button>
-                            </div>
+
+                              <form class="dsmovie-form">
+                                <div class="form-group dsmovie-form-group">
+                                  <label for="email">Informe seu E-mail</label>
+                                  <input class="form-control" type="email" id="email">
+                                </div>
+                                <div class="form-group dsmovie-form-group">
+                                    <label for="score">Informe sua avaliação</label>
+                                    <select class="form-control" name="score" id="score">
+                                    
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        
+                                    </select>
+                                </div>
+                                <div class="dsmovie-form-btn-container">
+                                    <button type="submit" class="third-button">
+                                        <span>
+                                           <a>Salvar</a>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="dsmovie-form-btn-container">
+                                    <button onclick="location.href='index.html'" type="button" class="third-button">
+                                        <span>Cancelar</span>
+                                    </button>
+                                </div>
+                              </form>
+                           
                         </div>
                     </div>
                 </div>
