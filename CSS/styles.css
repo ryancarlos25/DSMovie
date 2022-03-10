@@ -6,7 +6,10 @@
     --color-primary: #393b3d;
     --white: #fff;
     --button-search: #B81D24;
-    --text-light-gray:#aaa
+    --text-light-gray:#aaa;
+    --background: #0e091b;
+    --star-yellow: #FFBB3A;
+
 
 }
 
@@ -20,7 +23,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html, body {
-    background-color: var(--bg-gray);
+    background-color: var(--background);
+    
 }
 
     header {
@@ -86,7 +90,7 @@ html, body {
         align-items: center;
         justify-content: space-between;
         border-radius: 0 0 8px 8px;
-        min-height: 150px;
+        height: 220px;
     }
 
     .dsmovie-card-description h3 {
@@ -108,7 +112,7 @@ html, body {
     }
     
     .dsmovie-form-description{
-        background-color: var(--white);
+        background-color: var(--color-primary);
         padding: 20px;
         display: flex;
         flex-direction: column;
@@ -120,7 +124,33 @@ html, body {
         font-size: 13px;
         font-weight: 700;
         margin: 20px;
+        color: #ddd;
     }
+
+    .dsmovie-card-description-bottom h4{
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--star-yellow);
+}
+    .dsmovie-card-description-bottom p{
+        font-size: 12px;
+        font-weight: 700;
+        color:var(--text-light-gray) ;
+        margin-bottom: 10px;
+    }
+    .dsmovie-card-description-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dsmovie-card-description-bottom img{
+        width: 22px;
+        cursor: default;
+        
+
+    }
+    
     .dsmovie-form-btn-container{
         display: flex;
         flex-direction: column;
@@ -150,10 +180,16 @@ html, body {
     margin: 8px;
 }
 
-button span {
+button p {
     display: inline-block;
     position: relative;
     transition: all .5s;
+}
+
+.container-button p{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
 }
 
 button:hover {
@@ -179,7 +215,7 @@ button:hover {
     outline-offset: 4px;
 }
 
-.third-button span {
+.third-button p {
     display: block;
     padding: 12px 42px;
     border-radius: 8px;
@@ -187,11 +223,11 @@ button:hover {
     transform: translateY(-7px);
 }
 
-.third-button:hover span {
+.third-button:hover p {
     transform: translateY(-6px);
 }
 
-.third-button:active span {
+.third-button:active p {
     transform: translateY(-1px);
 }
 
@@ -214,13 +250,39 @@ button:hover {
     transform: translateY(-7px);
 }
 
-.third-button-cancel:hover span {
+.third-button-cancel:hover p {
     transform: translateY(-6px);
 }
 
-.third-button-cancel:active span {
+.third-button-cancel:active p {
     transform: translateY(-1px);
 }
       
-        
+ /* page footer */
+
+.footer{
+    border-top: 2px solid var(--text-light-gray);
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.sharelinks span, span{
+    margin: 10px;
+    color: var(--white);
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.sharelinks a {
+    margin: 3px;
+}
+ .githublink-img{ height: 30px;
+    width: 30px;
+    margin-right: 13px;
+
+ }
         
