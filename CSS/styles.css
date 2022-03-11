@@ -33,6 +33,15 @@ html, body {
         height: 60px;
         display: flex;  
     }
+
+    h2{
+        display: flex;
+        padding: 7px;
+        font-size: 18px;
+        font-weight: 700;
+
+        
+    }
     
     nav {
     display: flex;
@@ -41,7 +50,7 @@ html, body {
     
 }
 
-    nav h1, h2 {
+    nav h1 {
         font-size: 24px;
         font-weight: 700;
     }
