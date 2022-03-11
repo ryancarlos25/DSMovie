@@ -66,8 +66,28 @@ html, body {
         margin-right: 10px;
     }
     
+    .dsmovie-pagination-container{
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dsmovie-pagination-box{
+        display: flex ;
+        width: 280px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dsmovie-pagination-box p{
+        margin: 0;
+        font-size: 19px;
+        color: var(--button-search);
+        font-weight: 400;
+    }
+    
     #dsmovie-card-list {
-    padding: 40px 0;
+    padding: 0 10px;
     }
     
     .dsmovie-card {
@@ -170,7 +190,7 @@ html, body {
     
     /* Animated Botton */
 
-    button {
+    button, .arrow-button, .arrow-next {
     border: none;
     transition: all .5s;
     width: 180px;
@@ -178,13 +198,14 @@ html, body {
     font-weight: bold;
     font-size: 14px;
     margin: 8px;
-}
+    }
 
-button p {
+    button p, .arrow-button img, .arrow-next img{
     display: inline-block;
     position: relative;
     transition: all .5s;
 }
+
 
 .container-button p{
     font-size: 14px;
@@ -258,7 +279,43 @@ button:hover {
     transform: translateY(-1px);
 }
       
- /* page footer */
+ 
+/* arrow button */
+
+.arrow-button, .arrow-next{
+    background: transparent;
+    border-radius: 8px;
+    color: #FFF;
+    padding: 0 0 0px;
+    outline-offset: 0px;
+    width: 90px;
+    height: 41px;
+}
+
+.arrow-button img, .arrow-next img{
+    display: flex;
+    padding: 14px 40px;
+    border-radius: 8px;
+    background: transparent;
+    transform: translateY(-7px);
+    margin: 5px;
+}
+
+.arrow-button:hover img {
+    transform: translateY(-6px);
+}
+
+.arrow-button:active img {
+    transform: translateY(-1px);
+}
+
+.arrow-next img{
+    transform: rotate(180deg);
+    padding: 15px 29px 7px 29px;
+    filter: invert(57%) sepia(61%) saturate(6069%) hue-rotate(335deg) brightness(100%) contrast(88%)
+}
+
+/* page footer */
 
 .footer{
     border-top: 2px solid var(--text-light-gray);
@@ -269,7 +326,7 @@ button:hover {
     
 }
 
-.sharelinks span, span{
+.footer span {
     margin: 10px;
     color: var(--white);
     align-items: center;
@@ -280,9 +337,25 @@ button:hover {
 .sharelinks a {
     margin: 3px;
 }
- .githublink-img{ height: 30px;
+ 
+.github-img{ height: 30px;
     width: 30px;
     margin-right: 13px;
 
  }
+
+ .linkedin-img {
+    height: 30px;
+    width: 30px;
+    margin-right: 13px;
+ }
+
+ .instagram-img{
+    height: 30px;
+    width: 30px;
+    margin-right: 13px;
+
+}
+
+
         
