@@ -9,13 +9,11 @@
     --text-light-gray:#aaa;
     --background: #0e091b;
     --star-yellow: #FFBB3A;
-
-
 }
 
 * { 
     box-sizing: border-box;
-    font-family: 'Open Sans'; sans-serif;
+    font-family: 'Open Sans'
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,10 +36,7 @@ html, body {
         display: flex;
         padding: 7px;
         font-size: 18px;
-        font-weight: 700;
-
-        
-    }
+        font-weight: 700;}
     
     nav {
     display: flex;
